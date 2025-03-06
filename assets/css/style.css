@@ -83,54 +83,58 @@ body{
 }
 
 /* ----- NAVIGATION BAR ----- */
-nav{
+nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Ensures vertical alignment */
     width: 100%;
-    height: 90px;
-    line-height: 90px;
+    height: 80px; /* Reduced height for better proportions */
+    line-height: 80px;
     background: var(--body-color);
-    padding-inline: 9vw;
+    padding: 0 7vw; /* Adjusted padding for better positioning */
     transition: .3s;
     z-index: 100;
 }
-.nav-logo{
-   position: relative;
+
+.nav-logo {
+    position: relative;
+    margin-left: -20px; /* Moves the name slightly to the left */
 }
-.nav-name{
-    font-size: 30px;
+
+.nav-name {
+    font-size: 28px; /* Slightly reduced size for better fit */
     font-weight: 600;
     color: var(--text-color-third);
 }
-.nav-logo span{
-    position: absolute;
-    top: -15px;
-    right: -20px;
-    font-size: 5em;
-    color: var(--text-color-second);
-}
-.nav-menu, .nav_menu_list{
+
+.nav-menu, .nav_menu_list {
     display: flex;
+    gap: 10px; /* Reduced spacing between menu items */
 }
-.nav-menu .nav_list{
+
+.nav-menu .nav_list {
     list-style: none;
     position: relative;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     color: var(--text-color-second);
     font-weight: 500;
-    padding-inline: 15px;
-    margin-inline: 20px;
+    padding: 10px 12px; /* Adjusted padding for balance */
+    margin-inline: 10px; /* Reduced margin to tighten layout */
 }
-.nav-menu-btn{
+
+.nav-menu-btn {
     display: none;
 }
-.nav-menu-btn i{
+
+.nav-menu-btn i {
     font-size: 28px;
     cursor: pointer;
 }
+
 .active-link{
     position: relative;
     color: var(--first-color);
@@ -502,11 +506,11 @@ h3{
 .project-box {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Ensure equal spacing */
     align-items: center;
     flex-direction: column;
     width: 30%;
-    height: 380px;
+    min-height: 400px; /* Changed from fixed height to min-height */
     background: var(--color-white);
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
@@ -516,9 +520,9 @@ h3{
 }
 
 .project-box img {
-    width: 100%; /* Ensure image takes full width */
-    height: 180px; /* Set fixed height for uniformity */
-    object-fit: cover; /* Ensures images fit neatly */
+    width: 100%; 
+    height: 180px; /* Set a uniform height */
+    object-fit: cover; /* Ensures the image fills properly */
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -553,8 +557,79 @@ h3{
 }
 
 .project-links a:hover {
-    background: #008bb5;
+    background: #008bb5;   
 }
+
+/* certification section */
+#certifications {
+    padding: 80px 5vw;
+    text-align: center;
+    background-color: var(--body-color);
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: var(--text-color-third);
+}
+
+.certification-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.certification {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.certification:hover {
+    transform: translateY(-5px);
+}
+
+.certification img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.certification h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--text-color-second);
+}
+
+.certification p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.certification .btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background: var(--text-color-second);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.certification .btn:hover {
+    background: var(--text-color-third);
+}
+
+
 
 /* ----- CONTACT BOX ----- */
 .contact-info{
