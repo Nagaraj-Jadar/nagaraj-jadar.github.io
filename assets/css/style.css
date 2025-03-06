@@ -397,6 +397,7 @@ h3{
 
  
 /* ----- ABOUT / SKILLS BOX ----- */
+/* Skills Section Styles */
 .skills-container {
     display: flex;
     flex-direction: column;
@@ -459,8 +460,15 @@ h3{
     color: #007396; /* Java - Blue */
 }
 
-.fa-python {
-    color: #3776AB; /* Python - Blue */
+.skill-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* MongoDB Icon */
+.skill-box .fa-database {
+    color: #4DB33D; /* MongoDB - Green */
 }
 
 /* Databases */
@@ -486,13 +494,11 @@ h3{
 }
 
 /* Hover Effect */
-.skill-box:hover i {
+.skill-box:hover i, .skill-box:hover img {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
     filter: brightness(1.2);
 }
-
-
 
 /* ----- PROJECTS BOX ----- */
 .project-container {
