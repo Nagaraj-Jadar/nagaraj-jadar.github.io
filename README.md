@@ -115,6 +115,3 @@ You can download my CV by clicking the button below:
 
 Feel free to explore my projects and certifications, and don't hesitate to contact me for collaboration or job opportunities! 🤝
 
----
-
-© 2025 Nagaraj Jadar
