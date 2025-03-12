@@ -111,7 +111,4 @@ You can download my CV by clicking the button below:
 
 [Download CV](NAGARAJ_JADAR.pdf)
 
----
-
-Feel free to explore my projects and certifications, and don't hesitate to contact me for collaboration or job opportunities! 🤝
 
